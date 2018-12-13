@@ -10,7 +10,11 @@ include("functions/functions.php");
 <head>
 <title> IT Shop </title>
 
-<link rel="stylesheet" href="styles/style.css" media="all" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -20,15 +24,16 @@ include("functions/functions.php");
 <div class="main_wrapper">
 
 	<!-- Header -->
-	<div class="header_wrapper"> 
+	<!-- <div class="header_wrapper"> 
 	
 		<a href="index.php"><img id="logo" src="images/adidas_blue.png" /></a>
 	
-	</div>
-	<!-- / header -->
-	
+	</div> -->
+	<?php
+	include('nav.php');
+?>
 	<!-- menubar -->
-	<div class="menubar"> 
+	<!-- <div class="menubar"> 
 		<ul id="menu">
 			<li><a href="index.php">Home</li>
 			<li><a href="all_products.php">Products</li>
@@ -37,9 +42,9 @@ include("functions/functions.php");
 			<li><a href="cart.php">Cart</li>
 			<li><a href="#">Contact</li>
 		</ul>	
-		
+		 -->
 		<!-- Method to do form and collect data-->
-		<div id="form">
+		<!-- <div id="form">
 			<form method="get" action="results.php" enctype="multipart/form-data" >
 				
 				<input type="text" name="user_query" placeholder="Search" />
@@ -47,7 +52,7 @@ include("functions/functions.php");
 		
 			
 			</form>
-		</div>
+		</div> -->
 	
 	
 	</div>

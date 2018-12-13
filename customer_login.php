@@ -2,9 +2,26 @@
 include("includes/db.php");
 
 ?>
-
-
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form> 
+<!-- 
 <div>
+
+
 
 	<form method="post" action="">
 	
@@ -13,10 +30,15 @@ include("includes/db.php");
 			<tr align=" center">
 				<td><h2>Login or Register to Buy!</h2></td>
 			</tr>
-			
+
 			<tr>
-				<td align="right">Email :</td>
-				<td><input type="text" name="email" placeholder="Enter email" required /></td>
+			<div class="form-group">
+  	<label for="email">Email:</label>
+  		<input type="text" name="email" class="form-control" id="usr" required>
+			</div>
+			
+			
+		
 			</tr>
 
 			<tr>
@@ -40,7 +62,7 @@ include("includes/db.php");
 		
 		<h2 style="float:left; padding-right:5px;"><a href="customer_register.php" style="text-decoration:none;">Register Here !</a></h2>
 	
-	</form>
+	</form> -->
 
 	<?php
 	
