@@ -12,6 +12,7 @@ include("functions/functions.php");
 
 <link rel="stylesheet" href="styles/style.css" media="all" />
 
+
 </head>
 
 <body>
@@ -33,7 +34,7 @@ include("functions/functions.php");
 			<li><a href="index.php">Home</li>
 			<li><a href="all_products.php">Products</li>
 			<li><a href="customer/my_account.php">Account</li>
-			<li><a href="#">Sign Up</li>
+			<li><a href="customer_register.php">Sign Up</li>
 			<li><a href="cart.php">Cart</li>
 			<li><a href="#">Contact</li>
 		</ul>	

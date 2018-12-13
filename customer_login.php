@@ -44,7 +44,7 @@ include("includes/db.php");
 
 	<?php
 	
-	if(isset($_POST['email'])){
+	if(isset($_POST['login'])){
 		
 		$c_email = $_POST['email'];
 		$c_pass= $_POST['pass'];
@@ -75,7 +75,7 @@ include("includes/db.php");
 		$_SESSION['customer_email'] = $c_email;
 		
 		echo "<script>alert('LOGIN success')</script>";
-		echo"<script>window.open('customer/my_account.php','_self')</script>";
+		echo"<script>window.open('index.php','_self')</script>";
 			
 		}
 		
@@ -85,7 +85,7 @@ include("includes/db.php");
 		$_SESSION['customer_email'] = $c_email;
 		
 		echo "<script>alert('LOGIN success')</script>";
-		echo"<script>window.open('checkout.php','_self')</script>";
+		echo"<script>window.open('index.php','_self')</script>";
 			
 		}
 	}

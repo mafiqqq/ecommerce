@@ -94,7 +94,7 @@ include("includes/db.php");
 		
 		</div>
      
-			<form action="customer_register.php" method="post" enctype="multipart/form-data">
+			<form action="" method="post" enctype="multipart/form-data">
 			
 				<table align="center" width="750px">
 				
@@ -154,12 +154,6 @@ include("includes/db.php");
 					<td><input type="text" name="c_contact" required /></td>
 				</tr>
 				
-				<tr>
-					<td align="right">Customer Address :</td>
-					<td><input type="text" name="c_address" required /></td>
-				</tr>
-				
-				
 				<tr align="center">
 					<td colspan="6"><input type="submit" name="register" value="Create Account" /></td>
 				</tr>
@@ -203,7 +197,6 @@ include("includes/db.php");
 		$c_country = $_POST['c_country'];
 		$c_city = $_POST['c_city'];
 		$c_contact = $_POST['c_contact'];
-		$c_address = $_POST['c_address'];
 		$c_image = $_FILES['c_image']['name'];
 		$c_image_tmp = $_FILES['c_image']['tmp_name'];
 		
@@ -211,34 +204,42 @@ include("includes/db.php");
 		move_uploaded_file($c_image_tmp, "customer/customer_images/$c_image");
 		
 		
-		$insert_c = "insert into customers (customer_ip, customer_name, customer_email, customer_pass, customer_country, customer_city, customer_contact, customer_address, customer_image) values ('$ip', '$c_name', '$c_email', '$c_pass', '$c_country', '$c_city', '$c_contact','$c_address','$c_image')";
+		$insert_c = "insert into customers (customer_ip, customer_name, customer_email, customer_pass, customer_country, customer_city, customer_contact, customer_image) values ('$ip', '$c_name', '$c_email', '$c_pass', '$c_country', '$c_city', '$c_contact','$c_image')";
 		
-		$run_c = mysqli_query($con, $insert_c);
-		
-		$sel_cart = "select * from cart where ip_add='$ip'";
-		
-		$run_cart = mysqli_query($con, $sel_cart);
-		
-		$check_cart = mysqli_num_rows($run_cart);
-		
-		if($check_cart==0){
-		
-		//whenever have session must always include at top
-		$_SESSION['customer_email'] = $c_email;
-		
-		echo "<script>alert('Account created')</script>";
-		echo"<script>window.open('customer/my_account.php','_self')</script>";
-			
+		if($con -> query($insert_c)){
+			echo "<script>window.open('index.php','_self')</script>";
 		}
-		
 		else {
-			
-		$_SESSION['customer_email'] = $c_email;
-		
-		echo "<script>alert('Account created')</script>";
-		echo"<script>window.open('checkout.php','_self')</script>";
-			
+			echo "error :". $sql . " " . $con->error;
 		}
+
+		// $run_c = mysqli_query($con, $insert_c);
+		
+
+		// $sel_cart = "select * from cart where ip_add='$ip'";
+		
+		// $run_cart = mysqli_query($con, $sel_cart);
+		
+		// $check_cart = mysqli_num_rows($run_cart);
+		
+		// if($check_cart==0){
+		
+		// //whenever have session must always include at top
+		// $_SESSION['customer_email'] = $c_email;
+		
+		// echo "<script>alert('Account created')</script>";
+		// echo"<script>window.open('customer/index.php','_self')</script>";
+			
+		// }
+		
+		// else {
+			
+		// $_SESSION['customer_email'] = $c_email;
+		
+		// echo "<script>alert('Account created')</script>";
+		// echo"<script>window.open('index.php','_self')</script>";
+			
+		// }
 		
 		
 		
