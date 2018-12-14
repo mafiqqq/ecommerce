@@ -9,10 +9,6 @@ include('includes/header.php');
 <style>
 h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
-<<<<<<< HEAD
-
-</head>
-=======
 /********************* shopping 1 **********************/
 .product-grid{font-family:Raleway,sans-serif;text-align:center;padding:0 0 72px;border:1px solid rgba(0,0,0,.1);overflow:hidden;position:relative;z-index:1}
 .product-grid .product-image{position:relative;transition:all .3s ease 0s}
@@ -45,7 +41,6 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 @media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
 }
 </style>
->>>>>>> 27a5d11be042d769ad852c185aa2eb44f48b9224
 
 
 	<!-- Header -->
@@ -145,7 +140,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
                 </div>
             </div>
         </div>
-        
+
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
@@ -155,7 +150,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
                     </a>
                     <ul class="social">
     
-                    	<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    	<li><a href="cart.php" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">Sale</span>
                     <span class="product-discount-label">50%</span>
