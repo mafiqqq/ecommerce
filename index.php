@@ -76,16 +76,17 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 	</div>
 	<!-- /menubar -->
 	
-	<div class="content_wrapper">
+	<!-- <div class="content_wrapper">
 	
-		<!-- Sidebar -->
-		<div id="sidebar">
+		<!- Sidebar -->
+        
+		<!-- <div id="sidebar">
 			<div id="sidebar_title">Categories</div>
 			
 			<ul id="cats">
 				
 			<?php getCats(); ?>	
-			<!-- <?php getCatPro(); ?> -->
+			<?php getCatPro(); ?> 
 			
 			</ul>
 		
@@ -102,10 +103,10 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 			
 		</div>
 	
-	</div>
+	</div> 
 
 		
-		<!-- Content area -->
+		<!- Content area -->
 		<div id="content_area">
 		<div class="container">
     <h3 class="h3">English's Novel</h3>
@@ -169,6 +170,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
                 </div>
             </div>
         </div>
+        
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
