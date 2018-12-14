@@ -145,6 +145,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
                 </div>
             </div>
         </div>
+        
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
