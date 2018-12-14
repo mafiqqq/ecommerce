@@ -9,6 +9,10 @@ include('includes/header.php');
 <style>
 h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
+<<<<<<< HEAD
+
+</head>
+=======
 /********************* shopping 1 **********************/
 .product-grid{font-family:Raleway,sans-serif;text-align:center;padding:0 0 72px;border:1px solid rgba(0,0,0,.1);overflow:hidden;position:relative;z-index:1}
 .product-grid .product-image{position:relative;transition:all .3s ease 0s}
@@ -41,6 +45,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 @media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
 }
 </style>
+>>>>>>> 27a5d11be042d769ad852c185aa2eb44f48b9224
 
 
 	<!-- Header -->
@@ -56,7 +61,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 			<li><a href="index.php">Home</li>
 			<li><a href="all_products.php">Products</li>
 			<li><a href="customer/my_account.php">Account</li>
-			<li><a href="#">Sign Up</li>
+			<li><a href="customer_register.php">Sign Up</li>
 			<li><a href="cart.php">Cart</li>
 			<li><a href="#">Contact</li>
 		</ul>	

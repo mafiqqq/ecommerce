@@ -1,4 +1,3 @@
-<!DOCTYPE>
 <?php
 
 //must use this if wanna use session later on to the page
@@ -6,8 +5,8 @@ session_start();
 
 include("functions/functions.php");
 
-
 ?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -177,6 +176,10 @@ include("functions/functions.php");
 				$values = array_sum($product_price);
 				
 				$total += $values;
+
+				if (isset($_POST['qty'])) {
+					$qty = $_POST['qty']; 
+				}
 				
 				?>
 				
@@ -186,7 +189,11 @@ include("functions/functions.php");
 					<img src="admin_area/product_images/
 					<?php echo $product_image; ?>" width="60"
 					height="60" /></td>
-					<td><input type="text" size="4" name="qty" value="<?php echo $_SESSION['qty'];?>"/><td>
+					<td><input type="text" size="4" name="qty" value=""/><td>
+
+					<td><?php echo "RM". $single_price; ?></td>
+
+					
 					<?php 
 					
 					if(isset($_POST['update_cart'])){
@@ -197,25 +204,16 @@ include("functions/functions.php");
 						
 						$qty = $_POST['qty'];
 						
-						$update_qty = "update cart set qty='$qty'";
+						$update_qty = "update cart set qty='$qty' where ip_add='$ip' AND pro_id='$pro_id'";
 						
 						$run_update_qty = mysqli_query($con, $update_qty);
 						
 						//This session will hold the value from the text field 
 						$_SESSION['qty']=$qty;
 						
-						$total = $total * $qty;
-						
-						
-					
-					}
-					
-					
+						$total = $total * (int)$qty;
+					}	
 					?>
-					
-					
-					
-					
 					<td size="4"><?php echo "RM" . $single_price; ?></td>
 					
 				
@@ -230,8 +228,10 @@ include("functions/functions.php");
 				
 				
 				<tr align="center">
+					<td colspan="2"><input type="submit" name="remove_cart" value="Remove Cart" /></td>
 					<td colspan="2"><input type="submit" name="update_cart" value="Update Cart" /></td>
-					<td><input type="submit" name="continue" value="Continue Shopping" /></td>
+					<!-- <td><input type="submit" name="continue" value="Continue Shopping" /></td> -->
+					<td><button><a href="index.php" style="text-decoration:none; color:black;">Continue Shopping</a></button></td>
 					<td><button><a href="checkout.php" style="text-decoration:none; color:black;">Checkout</a></button></td>
 				</tr>
 				
@@ -242,14 +242,14 @@ include("functions/functions.php");
 			
 			<?php 
 			
-			function updateCart(){
+			
 				
 			global $con;
 			
 			$ip = getIp();
 			
 			
-			if(isset($_POST['update_cart'])){
+			if(isset($_POST['remove_cart'])){
 				
 				foreach($_POST['remove'] as $remove_id) {
 					
@@ -268,12 +268,12 @@ include("functions/functions.php");
 			
 			if(isset($_POST['continue'])){
 				echo "<script>window.open('index.php','_self')</script>";
-			
+		
 			}
 			
-			echo @$up_cart = updateCart();
 			
-			}
+			
+			
 			?>
 			
 			
