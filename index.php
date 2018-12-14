@@ -47,14 +47,20 @@ include('includes/header.php');
 	
 	<!-- <div class="content_wrapper">
 	
+<<<<<<< HEAD
 		<-- Sidebar --
 		<div id="sidebar">
+=======
+		<!- Sidebar -->
+        
+		<!-- <div id="sidebar">
+>>>>>>> 5c80ccb5b41e7008a08b1ffac35889b1c8ef97e9
 			<div id="sidebar_title">Categories</div>
 			
 			<ul id="cats">
 				
 			<?php getCats(); ?>	
-			<!-- <?php getCatPro(); ?> -->
+			<?php getCatPro(); ?> 
 			
 			</ul>
 		
@@ -74,7 +80,7 @@ include('includes/header.php');
 	</div> 
 
 		
-		<!-- Content area -->
+		<!- Content area -->
 		<div id="content_area">
 		<div class="container">
     <h3 class="h3">English's Novel</h3>
@@ -108,6 +114,7 @@ include('includes/header.php');
                 </div>
             </div>
         </div>
+
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
@@ -117,7 +124,7 @@ include('includes/header.php');
                     </a>
                     <ul class="social">
     
-                    	<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    	<li><a href="cart.php" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                     <span class="product-new-label">Sale</span>
                     <span class="product-discount-label">50%</span>
@@ -138,6 +145,7 @@ include('includes/header.php');
                 </div>
             </div>
         </div>
+        
         <div class="col-md-3 col-sm-6">
             <div class="product-grid">
                 <div class="product-image">
