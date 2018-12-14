@@ -1,17 +1,16 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <?php
 session_start();
-include("functions/functions.php");
-
+include ("functions/functions.php");
 
 ?>
 <html>
 
 <head>
-<title> IT Shop </title>
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<title><?php echo TITLE; ?></title>
+<!--This is the second step echo the title -->
+  <link rel="stylesheet" href="styles/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -25,8 +24,8 @@ include("functions/functions.php");
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand/logo -->
-  
-  
+
+
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -35,7 +34,7 @@ include("functions/functions.php");
     <li class="nav-item">
       <a class="nav-link" href="all_products.php">Products</a>
     </li>
-    <li class="nav-item">
+      <li class="nav-item">
       <a class="nav-link" href="customer/my_account.php">Account</a>
 	</li>
 	<li class="nav-item">

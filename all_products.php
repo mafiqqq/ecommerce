@@ -1,33 +1,32 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <?php
-include("functions/functions.php");
-
-
+define ("TITLE", "Home | Book House");
+include('includes/header.php');
 ?>
 <html>
 
-<head>
+<!-- <head>
 <title> Yo </title>
 
 <link rel="stylesheet" href="styles/style.css" media="all" />
 
 </head>
 
-<body>
+<body> -->
 
 <!-- Main Container -->
-<div class="main_wrapper">
+<!-- <div class="main_wrapper"> -->
 
 	<!-- Header -->
-	<div class="header_wrapper"> 
+	<!-- <div class="header_wrapper"> 
 	
 		<a href="index.php"><img id="logo" src="images/adidas_blue.png" /></a>
 	
-	</div>
+	</div> -->
 	<!-- / header -->
 	
 	<!-- menubar -->
-	<div class="menubar"> 
+	<!-- <div class="menubar"> 
 		<ul id="menu">
 			<li><a href="index.php">Home</li>
 			<li><a href="all_products.php">Products</li>
@@ -36,9 +35,9 @@ include("functions/functions.php");
 			<li><a href="cart.php">Cart</li>
 			<li><a href="#">Contact</li>
 		</ul>	
-		
+		 -->
 		<!-- Method to do form and collect data-->
-		<div id="form">
+		<!-- <div id="form">
 			<form method="get" action="results.php" enctype="multipart/form-data" >
 				
 				<input type="text" name="user_query" placeholder="Search" />
@@ -49,35 +48,12 @@ include("functions/functions.php");
 		</div>
 	
 	
-	</div>
+	</div> -->
 	<!-- /menubar -->
 	
-	<div class="content_wrapper">
+	<!-- <div class="content_wrapper"> -->
 	
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div id="sidebar_title">Categories</div>
-			
-			<ul id="cats">
-				
-			<?php getCats(); ?>	
 		
-			
-			</ul>
-		
-		<div id="sidebar">
-			<div id="sidebar_title">Brands</div>
-			
-			<ul id="cats">
-				
-			<?php getBrands(); ?>
-	
-			
-			</ul>
-			
-			
-		</div>
-	
 	</div>
 
 		
@@ -132,18 +108,14 @@ include("functions/functions.php");
 			</div>
 		
 		</div>
-	
-	
-	<div id="footer"> 
-	
-	<h2 style="text-align:center; padding-top:30px;">&copy; 2018 by Mohamed Afiq </h2>
-	
-	</div>
 
-	
-</div>
 
 <!-- Main container ends -->
+<?php 
+include('includes/footer.php');
+?>
+
+
 
 </body>
 

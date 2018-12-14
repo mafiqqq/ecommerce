@@ -178,10 +178,6 @@ include("includes/db.php");
 <!-- Main container ends -->
 
 </body>
-
-
-
-
 </html>
 <?php
 	
