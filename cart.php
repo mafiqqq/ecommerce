@@ -3,6 +3,9 @@
 //must use this if wanna use session later on to the page
 session_start();
 
+
+include('includes/header.php');
+
 include("functions/functions.php");
 
 ?>
@@ -10,7 +13,7 @@ include("functions/functions.php");
 <html>
 
 <head>
-<title> IT Shop </title>
+<title> Cart </title>
 
 <link rel="stylesheet" href="styles/style.css" media="all" />
 
@@ -286,17 +289,20 @@ include("functions/functions.php");
 		
 		</div>
 	
-	
+<!-- 	
 	<div id="footer"> 
 	
 	<h2 style="text-align:center; padding-top:30px;">&copy; 2018 by Mohamed Afiq </h2>
 	
-	</div>
+	</div> -->
 
 	
 </div>
 
 <!-- Main container ends -->
+<?php 
+include('includes/footer.php');
+?>
 
 </body>
 

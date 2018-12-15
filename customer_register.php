@@ -3,6 +3,7 @@
 session_start();
 include("functions/functions.php");
 include("includes/db.php");
+include('includes/header.php');
 
 ?>
 <html>
@@ -289,8 +290,9 @@ a {
 	
 </div>
 
-<!-- Main container ends -->
-
+<?php 
+include('includes/footer.php');
+?>
 </body>
 </html>
 <?php

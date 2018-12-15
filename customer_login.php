@@ -1,6 +1,6 @@
 <?php
 include("includes/db.php");
-
+include('includes/header.php');
 
 ?>
 <head>
@@ -311,3 +311,6 @@ margin-left: 4px;
 	
 
 </div>
+<?php 
+include('includes/footer.php');
+?>
