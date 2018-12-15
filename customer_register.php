@@ -11,7 +11,71 @@ include("includes/db.php");
 <title> IT Shop </title>
 
 <link rel="stylesheet" href="styles/style.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
 
+* {
+  box-sizing: content-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -83,7 +147,7 @@ include("includes/db.php");
 
 		
 		<!-- Content area -->
-		<div id="content_area">
+		<!-- <div id="content_area">
 		<?php cart() ?>
 		<div id="shopping_cart">
 			<span style="float:right; font-size:14px; line-height:40px">Welcome guest <b style="color:yellow">Shopping Cart -</b>
@@ -92,9 +156,59 @@ include("includes/db.php");
 			
 			</span>
 		
-		</div>
+		</div> -->
+
+		<form action="" method="post" enctype="multipart/form-data">
+  	<div class="container" align='center'>
+    <h1>Register To Book House</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+	<label for="name"><b>Customer Name:</b></label>
+    <input type="text" placeholder="Enter Your Name" name="c_name" required>
+	<hr>
+    <label for="email"><b>Email :</b></label>
+    <input type="text" placeholder="Enter Your Email" name="c_email" required>
+	<hr>
+    <label for="psw"><b>Password :</b></label>
+    <input type="password" placeholder="Enter Password" name="c_pass" required>
+	<hr>
+    <label for="image"><b>Profile image :</b></label>
+    <input type="file" name="c_image" required>
+    <hr>
+    <label for="country"><b>Select Your Country : </b></label>
+    <select name="c_country">
+						<option>Select a Country</option>
+						<option>Afghanistan</option>
+						<option>India</option>
+						<option>Japan</option>
+						<option>Indonesia</option>
+						<option>Malaysia</option>
+						<option>France</option>
+						<option>Pakistan</option>
+					</select>
+                    <hr>
+                    
+                    
+    <label for="city"><b>City : </b></label>
+    <input type="text"name="c_city" required>
+    <hr>
+    <label for="contact"><b>Contact :</b></label>
+    <input type="text" placeholder="Enter Your contact number" name="c_contact" required>
+                    
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+	
+  
+    <button type="submit" name="register" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
      
-			<form action="" method="post" enctype="multipart/form-data">
+			<!-- <form action="" method="post" enctype="multipart/form-data">
 			
 				<table align="center" width="750px">
 				
@@ -161,14 +275,14 @@ include("includes/db.php");
 				
 				</table>
 				
-			</form>
+			</form> -->
 		
 		</div>
 	
 	
 	<div id="footer"> 
 	
-	<h2 style="text-align:center; padding-top:30px;">&copy; 2018 by Mohamed Afiq </h2>
+	<h2 style="text-align:center; padding-top:30px;">&copy; 2018 by Mohamed Afiq & Friends </h2>
 	
 	</div>
 

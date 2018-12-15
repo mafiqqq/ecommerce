@@ -22,7 +22,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="index.html"> Mohamed Afiq 187170</a>
+    <a href="index.html"> Mohamed Afiq 187170 & Syafie 188160 & JJ</a>
 </div>
 <!-- Copyright -->
 
