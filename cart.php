@@ -63,8 +63,6 @@ include("functions/functions.php");
 			
 			<ul id="cats">
 				
-			<?php getCats(); ?>	
-			<!-- <?php getCatPro(); ?> -->
 			
 			</ul>
 		
@@ -73,7 +71,7 @@ include("functions/functions.php");
 			
 			<ul id="cats">
 				
-			<?php getBrands(); ?>
+		
 	
 			
 			</ul>
