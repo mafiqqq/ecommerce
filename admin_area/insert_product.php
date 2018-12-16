@@ -1,6 +1,8 @@
 <!DOCTYPE>
 <?php
 include("includes/db.php");
+include('includes/footer.php');
+
 ?>
 <html>
 	<head>

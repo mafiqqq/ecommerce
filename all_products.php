@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-define ("TITLE", "Home | Book House");
+define ("TITLE", "Products | Book House");
 include('includes/header.php');
 ?>
 <html>

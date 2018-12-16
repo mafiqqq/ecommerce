@@ -2,7 +2,7 @@
 <?php
 session_start();
 include("functions/functions.php");
-
+include('includes/header.php');
 
 ?>
 <html>
@@ -133,17 +133,18 @@ include("functions/functions.php");
 		</div>
 	
 	
-	<div id="footer"> 
+	<!-- <div id="footer"> 
 	
 	<h2 style="text-align:center; padding-top:30px;">&copy; 2018 by Mohamed Afiq </h2>
 	
-	</div>
+	</div> -->
 
 	
 </div>
 
-<!-- Main container ends -->
-
+<?php 
+include('includes/footer.php');
+?>
 </body>
 
 

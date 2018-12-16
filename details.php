@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <?php
 include("functions/functions.php");
-
+include('includes/header.php');
 
 ?>
 <html>
@@ -145,7 +145,9 @@ include("functions/functions.php");
 	
 </div>
 
-<!-- Main container ends -->
+<?php 
+include('includes/footer.php');
+?>
 
 </body>
 
